@@ -14,7 +14,7 @@
       "icon": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/server-icon.png",
       "version": "1.0.0",
       "address": "mc.hypixel.net:25565",
-      "minecraftVersion": "1.21.1",
+      "minecraftVersion": "1.21.10",
       "discord": {
         "shortId": "SkyBlock",
         "largeImageText": "SkyBlock Launcher",
@@ -28,36 +28,36 @@
       },
       "modules": [
         {
-          "id": "net.fabricmc:fabric-loader:0.16.10",
-          "name": "Fabric Loader",
+          "id": "net.fabricmc:fabric-loader:0.18.4",
+          "name": "Fabric Loader 0.18.4",
           "type": "Fabric",
           "artifact": {
-            "size": 0,
-            "MD5": "TO_REPLACE",
-            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/fabric-loader-0.16.10.jar"
+            "size": 1944518,
+            "MD5": "56c00fa22e0452e8567be1feae73c3b9",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/fabric-loader-0.18.4.jar"
           },
           "subModules": [
             {
-              "id": "net.fabricmc:intermediary:1.21.1",
-              "name": "Intermediary Mappings",
+              "id": "net.fabricmc:intermediary:1.21.10",
+              "name": "Intermediary Mappings 1.21.10",
               "type": "Library",
               "classpath": true,
               "artifact": {
-                "size": 0,
-                "MD5": "TO_REPLACE",
-                "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/intermediary-1.21.1.jar"
+                "size": 778652,
+                "MD5": "612031a185c7493cc93e908a875b72cc",
+                "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/intermediary-1.21.10.jar"
               }
             }
           ]
         },
         {
-          "id": "net.minecraft:1.21.1:1.21.1",
-          "name": "Minecraft 1.21.1",
+          "id": "net.minecraft:1.21.10:1.21.10",
+          "name": "Minecraft 1.21.10",
           "type": "VersionManifest",
           "artifact": {
-            "size": 0,
-            "MD5": "TO_REPLACE",
-            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/version-1.21.1.json"
+            "size": 2174,
+            "MD5": "4f967379b1e8c8288f7c987b357184ce",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/version-1.21.10.json"
           }
         },
 
