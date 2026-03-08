@@ -1,8 +1,8 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
+appId: 'fr.deltaarts.skyblocklauncher'
+productName: 'SkyBlock Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2026 Daniel Scalzi'
+copyright: 'Copyright © 2026 Delta Arts'
 
 asar: true
 compression: 'maximum'
@@ -39,10 +39,10 @@ mac:
 # Linux Configuration
 linux: 
   target: 'AppImage'
-  maintainer: 'Daniel Scalzi'
-  vendor: 'Daniel Scalzi'
-  synopsis: 'Modded Minecraft Launcher'
-  description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
+  maintainer: 'Delta Arts'
+  vendor: 'Delta Arts'
+  synopsis: 'SkyBlock Launcher - Hypixel SkyBlock Client'
+  description: 'Launcher Minecraft Fabric premium pour Hypixel SkyBlock avec mods performance, QoL et visuels. Par Delta Arts.'
   category: 'Game'
 
 

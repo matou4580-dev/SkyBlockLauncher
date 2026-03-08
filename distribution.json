@@ -1,0 +1,890 @@
+{
+  "version": "1.0.0",
+  "discord": {
+    "clientId": "TO_REPLACE_DISCORD_APP_ID",
+    "smallImageText": "SkyBlock Launcher",
+    "smallImageKey": "skyblock-launcher-icon"
+  },
+  "rss": "",
+  "servers": [
+    {
+      "id": "skyblock-main",
+      "name": "SkyBlock Launcher",
+      "description": "Client Fabric 1.21.10 optimise pour Hypixel SkyBlock — par Delta Arts",
+      "icon": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/server-icon.png",
+      "version": "1.0.0",
+      "address": "mc.hypixel.net:25565",
+      "minecraftVersion": "1.21.1",
+      "discord": {
+        "shortId": "SkyBlock",
+        "largeImageText": "SkyBlock Launcher",
+        "largeImageKey": "skyblock-large"
+      },
+      "mainServer": true,
+      "autoconnect": true,
+      "javaOptions": {
+        "supported": ">=17",
+        "suggestedMajor": 21
+      },
+      "modules": [
+        {
+          "id": "net.fabricmc:fabric-loader:0.16.10",
+          "name": "Fabric Loader",
+          "type": "Fabric",
+          "artifact": {
+            "size": 0,
+            "MD5": "TO_REPLACE",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/fabric-loader-0.16.10.jar"
+          },
+          "subModules": [
+            {
+              "id": "net.fabricmc:intermediary:1.21.1",
+              "name": "Intermediary Mappings",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 0,
+                "MD5": "TO_REPLACE",
+                "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/intermediary-1.21.1.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "net.minecraft:1.21.1:1.21.1",
+          "name": "Minecraft 1.21.1",
+          "type": "VersionManifest",
+          "artifact": {
+            "size": 0,
+            "MD5": "TO_REPLACE",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/version-1.21.1.json"
+          }
+        },
+
+
+        {
+          "_comment": "===== LIBS REQUIRED =====",
+          "id": "net.fabricmc.fabric-api:fabric-api:0.138.4+1.21.10@jar",
+          "name": "Fabric API",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2375888,
+            "MD5": "c9ebf1b300d813310d18115a7cc03f99",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/fabric-api-0.138.4+1.21.10.jar"
+          }
+        },
+        {
+          "id": "net.fabricmc:fabric-language-kotlin:1.13.9+kotlin.2.3.10@jar",
+          "name": "Fabric Language Kotlin",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 7642216,
+            "MD5": "5a82c29fbbfdd3acbb9da9229ae0e32d",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar"
+          }
+        },
+        {
+          "id": "dev.isxander:yet-another-config-lib:3.8.2+1.21.10@jar",
+          "name": "YetAnotherConfigLib (YACL)",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1127484,
+            "MD5": "ace7c4811f10788361f482bf2b24e22c",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/yet_another_config_lib_v3-3.8.2+1.21.10-fabric.jar"
+          }
+        },
+        {
+          "id": "dev.architectury:architectury:18.0.8@jar",
+          "name": "Architectury API",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 575956,
+            "MD5": "a1f0fb196a623c63d6a45969b142a6ce",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/architectury-18.0.8-fabric.jar"
+          }
+        },
+        {
+          "id": "me.fzzyhmstrs:fzzy-config:0.7.6+1.21.9@jar",
+          "name": "Fzzy Config",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2368285,
+            "MD5": "e0c9d5f07a09c5f38d8f38ce5ecbbdc1",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/fzzy_config-0.7.6+1.21.9.jar"
+          }
+        },
+        {
+          "id": "eu.pb4:placeholder-api:2.8.2+1.21.10@jar",
+          "name": "Text Placeholder API",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 268662,
+            "MD5": "392f27ec00dd71b8b4a9819f9449e856",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/placeholder-api-2.8.2+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.blamejared:searchables:1.0.2@jar",
+          "name": "Searchables",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 80466,
+            "MD5": "aa1a99f1e8a4d1d822415b18d6275f82",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/Searchables-fabric-1.21.10-1.0.2.jar"
+          }
+        },
+        {
+          "id": "com.thekillerbunny:utilize:1.1.2@jar",
+          "name": "Utilize",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 109320,
+            "MD5": "c18a756aae704f75a6cfc78843786192",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/Utilize-1.1.2+1.21.9-1.21.11.jar"
+          }
+        },
+        {
+          "id": "fuzs:forgeconfigapiport:21.10.1@jar",
+          "name": "Forge Config API Port",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 615376,
+            "MD5": "4804d13c574546ff0acb7b3f870340d1",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/libs/ForgeConfigAPIPort-v21.10.1+mc1.21.10-Fabric.jar"
+          }
+        },
+
+
+        {
+          "_comment": "===== PERFORMANCE =====",
+          "id": "me.jellysquid.mods:sodium:0.7.3+mc1.21.10@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1676903,
+            "MD5": "57a54742a51ae95bdc47e83f7245a9e2",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/sodium-fabric-0.7.3+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:lithium:0.20.1+mc1.21.10@jar",
+          "name": "Lithium",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 835455,
+            "MD5": "33ccbe4494ec33799c8a16d747071cd4",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/lithium-fabric-0.20.1+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "me.flashyreese.mods:sodium-extra:0.7.1+mc1.21.10@jar",
+          "name": "Sodium Extra",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 417279,
+            "MD5": "5ddcc11eeaa78acd8f00e1c263186b56",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/sodium-extra-fabric-0.7.1+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "me.flashyreese.mods:reeses-sodium-options:1.8.6+mc1.21.10@jar",
+          "name": "Reese's Sodium Options",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 82444,
+            "MD5": "6d7836317856c34562da177d09ad69b3",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/reeses-sodium-options-fabric-1.8.6+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "tr7zw:entityculling:1.9.5-mc1.21.10@jar",
+          "name": "Entity Culling",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1571707,
+            "MD5": "fc0b3da60f721566feea1be5732c05c8",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/entityculling-fabric-1.9.5-mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "net.raphimc:immediatelyfast:1.13.5+1.21.10@jar",
+          "name": "ImmediatelyFast",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 310340,
+            "MD5": "2e773ea7014eb9d10fb049f2019a1452",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/ImmediatelyFast-Fabric-1.13.5+1.21.10.jar"
+          }
+        },
+        {
+          "id": "net.lostluma:dynamic-fps:3.11.4@jar",
+          "name": "Dynamic FPS",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 218532,
+            "MD5": "886598dd03d845c5717ce05659ce9eeb",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/dynamic-fps-3.11.4+minecraft-1.21.9-fabric.jar"
+          }
+        },
+        {
+          "id": "ca.fxco:moreculling:1.5.0-beta.2@jar",
+          "name": "More Culling",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 349186,
+            "MD5": "ffa02716c7b44aca966f5732634bb027",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/moreculling-fabric-1.21.9-1.5.0-beta.2.jar"
+          }
+        },
+        {
+          "id": "com.thinkverse:badoptimizations:2.4.1@jar",
+          "name": "BadOptimizations",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 280916,
+            "MD5": "4c8fbc15615c84ec1e023cb001f2aad3",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/BadOptimizations-2.4.1-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:particle-core:0.3.2@jar",
+          "name": "Particle Core",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 141205,
+            "MD5": "4ec2fe8196aae13bb72999b3ed89716f",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/particle_core-0.3.2+1.21.9.jar"
+          }
+        },
+        {
+          "id": "me.steinborn:krypton:0.2.10@jar",
+          "name": "Krypton",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 270195,
+            "MD5": "f804ed489b36dd0b011b92b50e5c2119",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/krypton-0.2.10.jar"
+          }
+        },
+        {
+          "id": "org.embeddedt:modernfix:5.19.1@jar",
+          "name": "ModernFix",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 421567,
+            "MD5": "58404924cc65c754cea959b2921d76fd",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/modernfix-fabric-5.19.1+mc1.21.jar"
+          }
+        },
+        {
+          "id": "foundationgames:enhancedblockentities:1.2.0+1.21.10@jar",
+          "name": "Better Block Entities",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 119994,
+            "MD5": "4c06efb20961babcdbbe597100578ea4",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/bbe-1.2.0+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:ixeris:4.1.0+1.21.11@jar",
+          "name": "Ixeris",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 702051,
+            "MD5": "de26c5ac077230c9a90bf0b4c6941aac",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/Ixeris-4.1.0+1.21.11-fabric.jar"
+          }
+        },
+        {
+          "id": "com.ishland:vmp:0.2.0+beta.7.217@jar",
+          "name": "Very Many Players",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 419456,
+            "MD5": "8d0dc059d324c6889d71a536b6e8ddb7",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/vmp-fabric-mc1.21.10-0.2.0+beta.7.217-all.jar"
+          }
+        },
+        {
+          "id": "dev.draylar:rrls:5.1.12@jar",
+          "name": "Remove Reload Screens",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 198762,
+            "MD5": "84b859568cc57fd09d370fa5895f43de",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/performance/rrls-5.1.12+mc1.21.9-fabric.jar"
+          }
+        },
+
+
+        {
+          "_comment": "===== SKYBLOCK CORE =====",
+          "id": "de.hysky:skyblocker:6.1.1+1.21.10@jar",
+          "name": "Skyblocker",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 18656637,
+            "MD5": "ed177652a41f36858a0dca81e7fce7f4",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/core/skyblocker-6.1.1+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:skyblockpv:1.7.3@jar",
+          "name": "SkyBlock Profile Viewer",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 12306239,
+            "MD5": "c72bc0c4d9eb89ccce6dd9b67fb64ea1",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/core/SkyBlockPv-1.7.3-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:scamscreener:2.0.0+1.21.10@jar",
+          "name": "ScamScreener",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 398580,
+            "MD5": "7e2fb47d39b6d44bff6a56a6802a05b5",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/core/scamscreener-2.0.0+1.21.10.jar"
+          }
+        },
+        {
+          "id": "moe.nea:firmament:43.0.0+mc1.21.10@jar",
+          "name": "Firmament",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 5624752,
+            "MD5": "d2c76d4d129bf1199ec3c39ebd109797",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/core/Firmament-43.0.0+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:bazaarutils:0.6.2-beta@jar",
+          "name": "BazaarUtils",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2983803,
+            "MD5": "99a6ee578508e082f15dc4593c0ab949",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/core/bazaarutils-0.6.2-beta+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:ssu:1.0.8@jar",
+          "name": "SSU",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 56759,
+            "MD5": "4154eea99b26de9a25c985104918b8cd",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/core/ssu-1.0.8.jar"
+          }
+        },
+
+
+        {
+          "_comment": "===== SKYBLOCK QOL =====",
+          "id": "com.github:skyocean:1.13.1@jar",
+          "name": "SkyOcean",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 11308050,
+            "MD5": "ec39fef30521da4f263ab5d4a032394b",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/SkyOcean-1.13.1-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:skycubed:1.8.1@jar",
+          "name": "SkyCubed",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 8261946,
+            "MD5": "48f2a2cdc3654bd127ee73d9a429c244",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/SkyCubed-1.8.1-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:customscoreboard:1.12.1@jar",
+          "name": "Custom Scoreboard",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 7656695,
+            "MD5": "6f65e70e279d29f4a7c18af72b98ba26",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/CustomScoreboard-1.12.1-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:hotshirtlessmen:2.0.4.1@jar",
+          "name": "HSM (Mending/Drill Fix)",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 9613,
+            "MD5": "195d98168b2393a0dbfebc6bec512c68",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/hotshirtlessmen-2.0.4.1.jar"
+          }
+        },
+        {
+          "id": "com.github:aaron-mod:3.0.0-beta.2@jar",
+          "name": "Aaron's Mod",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2795065,
+            "MD5": "2ed34dcec0152081f98e5217a5e5cc1e",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/aaron-mod-3.0.0-beta.2+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:nofrills:0.4.10@jar",
+          "name": "NoFrills",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 779383,
+            "MD5": "59b4b83b9680b87aef38c2daa8bcac65",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/nofrills-1.21.10-0.4.10.jar"
+          }
+        },
+        {
+          "id": "com.github:ghostify-lite:1.7.2@jar",
+          "name": "Ghostify Lite",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 135258,
+            "MD5": "e0efba628fdeab079054d4871f21033a",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/ghostify-lite-1.7.2+1.21.10-minified.jar"
+          }
+        },
+        {
+          "id": "com.github:skycofl:1.8.6@jar",
+          "name": "SkyCofl",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 841827,
+            "MD5": "f325d5eaacae937f41148a78f61866b7",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/SkyCofl-1.8.6-Fabric-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:skyfall:0.2.4@jar",
+          "name": "SkyFall",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2427597,
+            "MD5": "e51a28586883071f70c435ec1037d1de",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/SkyFall-Beta 0.2.4-1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:athen:0.1.2@jar",
+          "name": "Athen",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 8693106,
+            "MD5": "4d305e34bbced3059272930827c3a03a",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/skyblock-qol/athen-0.1.2+1.21.10.jar"
+          }
+        },
+
+
+        {
+          "_comment": "===== VISUAL / SHADERS =====",
+          "id": "net.coderbot:iris:1.9.7+mc1.21.10@jar",
+          "name": "Iris Shaders",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2717422,
+            "MD5": "7d2bf05890132d821ae1c09458aac654",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/iris-fabric-1.9.7+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:gamma-utils:2.4.9@jar",
+          "name": "Gamma Utils",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 99372,
+            "MD5": "8b90a5fea57dde4ecf802c5f608c1f94",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/Gamma-Utils-2.4.9+mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "dev.isxander:zoomify:2.15.2@jar",
+          "name": "Zoomify",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 873244,
+            "MD5": "4a0558c6256d80ca4585871b0e1b4279",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/zoomify-2.15.2+1.21.9.jar"
+          }
+        },
+        {
+          "id": "tr7zw:notenoughanimations:1.11.3@jar",
+          "name": "Not Enough Animations",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1928364,
+            "MD5": "eec9b9c2aeac483c4d1164882c2cc47b",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/notenoughanimations-fabric-1.11.3-mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:waveycapes:1.8.2@jar",
+          "name": "Wavey Capes",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1838849,
+            "MD5": "f3ceefeb829cd38607547117cc4dfe1f",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/waveycapes-fabric-1.8.2-mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:animatium:3.0@jar",
+          "name": "Animatium",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1030462,
+            "MD5": "4233f32c99c30ff4e1ea9afd185641f9",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/animatium-3.0+1.21.10-fabric.jar"
+          }
+        },
+        {
+          "id": "tr7zw:skinlayers3d:1.10.2@jar",
+          "name": "3D Skin Layers",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1963871,
+            "MD5": "efd1ab077544365e4572a03a27dde35d",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/skinlayers3d-fabric-1.10.2-mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:sodium-shadowy-path-blocks:5.0.1@jar",
+          "name": "Sodium Shadowy Path Blocks",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 53791,
+            "MD5": "4f644869ae1e16baaa7cde01537443b6",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/sodium-shadowy-path-blocks-fabric-5.0.1.jar"
+          }
+        },
+        {
+          "id": "de.johni0702:bobby:5.2.10+mc1.21.9@jar",
+          "name": "Bobby",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 871197,
+            "MD5": "466ae7d7029653e86a8777ebb821d826",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/bobby-5.2.10+mc1.21.9.jar"
+          }
+        },
+        {
+          "id": "com.github:cwb:3.0.0@jar",
+          "name": "Cubes Without Borders",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 81623,
+            "MD5": "d29e2d0d27179c62638f2b79e857ba14",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/cwb-fabric-3.0.0+mc1.21.5.jar"
+          }
+        },
+        {
+          "id": "com.github:scaleme:3.0.0@jar",
+          "name": "Scale Me",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1812952,
+            "MD5": "7e368b854d418fdc9777fa1245f7cedc",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/scaleme-3.0.0+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:custom-crosshair-mod:1.6.4@jar",
+          "name": "Custom Crosshair",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 143201,
+            "MD5": "945f092c1e9bd01f62c3bf67da5e375c",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/custom-crosshair-mod-v1.6.4-fabric-mc1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:centered-crosshair:1.3.0@jar",
+          "name": "Centered Crosshair",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 11037,
+            "MD5": "1322cbfe0b622a385cf9e8065d68ac41",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/centered-crosshair+1.21.9-rc1-1.3.0.jar"
+          }
+        },
+        {
+          "id": "com.github:scoreboardoverhaul:1.4.2@jar",
+          "name": "Scoreboard Overhaul",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 7331093,
+            "MD5": "c515023ef61ebb6e0049ebff9b5beae3",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/visual/scoreboardoverhaul-1.4.2-mc1.21.9.jar"
+          }
+        },
+
+
+        {
+          "_comment": "===== QOL GENERAL =====",
+          "id": "com.terraformersmc:modmenu:16.0.0@jar",
+          "name": "Mod Menu",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 1083564,
+            "MD5": "796fbe44d12e83c7ac28e0c82b515649",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/modmenu-16.0.0.jar"
+          }
+        },
+        {
+          "id": "com.aizistral:nochatreports:2.16.0@jar",
+          "name": "No Chat Reports",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 249687,
+            "MD5": "bde05c509c547c9214eb4c50e1387086",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/NoChatReports-FABRIC-1.21.10-v2.16.0.jar"
+          }
+        },
+        {
+          "id": "com.github:nochatrestrictions:1.0.0@jar",
+          "name": "No Chat Restrictions",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 9907,
+            "MD5": "e00f093d0e9e903b3ed0d1784315d88d",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar"
+          }
+        },
+        {
+          "id": "com.github:chatplus:2.8.1@jar",
+          "name": "Chat Plus",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 26915266,
+            "MD5": "3bd10142599620d9d31a5c38e00b1ee9",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/chatplus-fabric-2.8.1.jar"
+          }
+        },
+        {
+          "id": "com.github:compact-chat:3.1.0@jar",
+          "name": "Compact Chat",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 17335,
+            "MD5": "91bfd2e96eb122b5731626d034fe53c4",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/compact-chat-1.21.1-fabric-3.1.0.jar"
+          }
+        },
+        {
+          "id": "com.github:soundcontroller:1.2.3@jar",
+          "name": "Sound Controller",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 74586,
+            "MD5": "529180a96f67aab8574a5e81d7b175dc",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/soundcontroller-1.2.3-mc1.21.9.jar"
+          }
+        },
+        {
+          "id": "com.moulberry:flashback:0.39.1@jar",
+          "name": "Flashback",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 211377057,
+            "MD5": "dde4e3520c90cb1eeb12ec315769428b",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/Flashback-0.39.1-for-MC1.21.10.jar"
+          }
+        },
+        {
+          "id": "me.shedaniel:roughlyenoughitems:21.9.813@jar",
+          "name": "Roughly Enough Items (REI)",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 2468603,
+            "MD5": "fb9365b9e3aca2cba4e95ba3a400d657",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/RoughlyEnoughItems-21.9.813-fabric.jar"
+          }
+        },
+        {
+          "id": "com.github:scrollabletooltips:1.4.2@jar",
+          "name": "Scrollable Tooltips",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 4708569,
+            "MD5": "3031d6e25235a457d2fc4d074b214ed3",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/Scrollable Tooltips-1.4.2 (1.21.11_Fabric).jar"
+          }
+        },
+        {
+          "id": "com.github:tooltip-scroll:1.5.1@jar",
+          "name": "Tooltip Scroll",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 83107,
+            "MD5": "33819718a024829b93805be4c9797d07",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/tooltip-scroll-1.5.1+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:bettercontrols:1.6.2@jar",
+          "name": "BetterControls",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 155492,
+            "MD5": "d100b33e16f5b57c2b4476af994f1bc0",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/BetterControls-1.21.9+v1.6.2.jar"
+          }
+        },
+        {
+          "id": "com.chattriggers:ctjs:3.0.0-beta@jar",
+          "name": "ChatTriggers",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 8287466,
+            "MD5": "03f5ba94ed9ecbd4a0e0b287ed2b8c79",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/ctjs-3.0.0-beta.jar"
+          }
+        },
+        {
+          "id": "com.blamejared:controlling:28.0.2@jar",
+          "name": "Controlling",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 83696,
+            "MD5": "76f726f39edbaa28df1c3d9d4608e4c7",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/Controlling-fabric-1.21.10-28.0.2.jar"
+          }
+        },
+        {
+          "id": "com.github:rei-calculator:1.1.0@jar",
+          "name": "REI Calculator",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 271122,
+            "MD5": "0ec7124414c0cde94eb7bb605330405d",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/rei-search-bar-calculations-1.1.0+1.21.6-10.jar"
+          }
+        },
+        {
+          "id": "com.github:no-resource-pack-warnings:1.4.0@jar",
+          "name": "No Resource Pack Warnings",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 5012,
+            "MD5": "5cdefa5f6062688d9701a9e5b12df03a",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/no-resource-pack-warnings-1.4.0.jar"
+          }
+        },
+        {
+          "id": "net.jeremybanks:language-reload:1.7.5@jar",
+          "name": "Language Reload",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 75644,
+            "MD5": "ef051b2bf09132effc61ae211394d178",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/language-reload-1.7.5+1.21.10.jar"
+          }
+        },
+        {
+          "id": "com.github:emoji-type:3.0.0@jar",
+          "name": "Emoji Type",
+          "type": "FabricMod",
+          "required": { "value": true, "def": true },
+          "artifact": {
+            "size": 373914,
+            "MD5": "c7543b4a61dad74835707ee79b667173",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/qol/emoji-type-3.0.0-1.21.10-fabric.jar"
+          }
+        },
+
+
+        {
+          "_comment": "===== RESOURCE PACKS =====",
+          "id": "com.github:hypixelplus:0.23.4@zip",
+          "name": "Hypixel+",
+          "type": "File",
+          "artifact": {
+            "size": 5813245,
+            "MD5": "90c7498b085e0ba02e9b6c4cfff9424b",
+            "path": "resourcepacks/Hypixel+ 0.23.4 for 1.21.8.zip",
+            "url": "https://github.com/matou4580-dev/SkyBlockLauncher/releases/download/v1.0.0/Hypixel+ 0.23.4 for 1.21.8.zip"
+          }
+        }
+      ]
+    }
+  ]
+}

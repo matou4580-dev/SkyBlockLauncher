@@ -199,14 +199,14 @@ body, button {
 }
 
 #frameButtonDarwin_restoredown {
-    background-color: #96e734;
+    background-color: #3b82f6;
 }
 #frameButtonDarwin_restoredown:hover,
 #frameButtonDarwin_restoredown:focus {
-    background-color: #D6FFA6;
+    background-color: #60a5fa;
 }
 #frameButtonDarwin_restoredown:active {
-    background-color: #bfff76;
+    background-color: #2563eb;
 }
 
 /*******************************************************************************
@@ -274,8 +274,8 @@ body, button {
 
 #welcomeImageSeal {
     border-radius: 50%;
-    border: 2px solid #cad7e1;
-    background: rgba(1, 2, 1, 0.5);
+    border: 2px solid #d4a537;
+    background: rgba(10, 22, 40, 0.7);
     height: 125px;
     width: 125px;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
@@ -1008,8 +1008,8 @@ body, button {
 }
 .loginOptionButton:hover,
 .loginOptionButton:focus {
-    background: rgba(54, 54, 54, 0.25);
-    text-shadow: 0px 0px 20px white;
+    background: rgba(10, 22, 40, 0.4);
+    text-shadow: 0px 0px 20px rgba(212, 165, 55, 0.6);
 }
 
 #loginOptionCancelContainer {
@@ -1230,7 +1230,7 @@ body, button {
 
 /* Selected server content container */
 .settingsSelServContainer {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(10, 22, 40, 0.35);
     width: 75%;
     border-radius: 3px;
     display: flex;
@@ -1373,9 +1373,9 @@ body, button {
     transition: .4s;
 }
 input:checked + .toggleSwitchSlider {
-    background-color: rgb(31, 140, 11);
+    background-color: rgb(212, 165, 55);
     /* box-shadow: inset 2px 1px 20px black; */
-    border: 1px solid rgb(31, 140, 11);
+    border: 1px solid rgb(212, 165, 55);
 }
 input:checked + .toggleSwitchSlider:before {
     transform: translateX(15px);
@@ -1392,7 +1392,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 .rangeSliderBar {
     position: absolute;
-    background: #8be88b;
+    background: #f0c75e;
     width: 50%;
     height: 5px;
     border-radius: 3px 0px 0px 3px;
@@ -1775,7 +1775,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Set the status color of an enabled mod. */
 .settingsBaseMod[enabled] > .settingsModContent > .settingsModMainWrapper > .settingsModStatus {
-    background-color: rgb(165, 195, 37);
+    background-color: rgb(212, 165, 55);
 }
 
 /* Add opacity to submods of a disabled mod. */
@@ -1817,8 +1817,8 @@ input:checked + .toggleSwitchSlider:before {
 #settingsDropinFileSystemButton:hover,
 #settingsDropinFileSystemButton:focus,
 #settingsDropinFileSystemButton[drag] {
-    background: rgba(54, 54, 54, 0.25);
-    text-shadow: 0px 0px 20px white;
+    background: rgba(10, 22, 40, 0.4);
+    text-shadow: 0px 0px 20px rgba(212, 165, 55, 0.6);
 }
 /* Refresh instructions on the file system button. */
 #settingsDropinRefreshNote {
@@ -1877,8 +1877,8 @@ input:checked + .toggleSwitchSlider:before {
 #settingsShaderpackButton:hover,
 #settingsShaderpackButton:focus,
 #settingsShaderpackButton[drag] {
-    background: rgba(54, 54, 54, 0.25);
-    text-shadow: 0px 0px 20px white;
+    background: rgba(10, 22, 40, 0.4);
+    text-shadow: 0px 0px 20px rgba(212, 165, 55, 0.6);
 }
 
 /* Main select container. */
@@ -2176,7 +2176,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Checkmark next to the version information. */
 #settingsAboutCurrentVersionCheck {
     border-radius: 50%;
-    background: #23aa23;
+    background: #d4a537;
     text-align: center;
     font-weight: bold;
     margin: 11px 12px;
@@ -2196,7 +2196,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsAboutCurrentVersionTitle {
     font-size: 12px;
     font-family: 'Avenir Medium';
-    color: #23aa23;
+    color: #d4a537;
     font-weight: bold;
 }
 
@@ -2375,7 +2375,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Checkmark next to the version information. */
 #settingsUpdateVersionCheck {
     border-radius: 50%;
-    background: #23aa23;
+    background: #d4a537;
     text-align: center;
     font-weight: bold;
     margin: 11px 12px;
@@ -2395,7 +2395,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsUpdateVersionTitle {
     font-size: 12px;
     font-family: 'Avenir Medium';
-    color: #23aa23;
+    color: #d4a537;
     font-weight: bold;
 }
 
@@ -2482,7 +2482,7 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer > #lower {
     height: 23%;
     display: flex;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(8, 15, 30, 0.85), rgba(8, 15, 30, 0));
 }
 #landingContainer > #lower > #left {
     position: relative;
@@ -2886,7 +2886,7 @@ input:checked + .toggleSwitchSlider:before {
     top: 0%;
     left: 0%;
     border-radius: 50%;
-    box-shadow: 0 0 15px #43c628;
+    box-shadow: 0 0 15px #d4a537;
     animation: glow-grow 4s ease-out infinite;
     background: rgba(0, 0, 0, 0.15);
 }
@@ -3408,7 +3408,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 #launch_button:hover,
 #launch_button:focus {
-    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+    text-shadow: 0px 0px 20px #d4a537, 0px 0px 20px #d4a537;
 }
 #launch_button:active {
     color: #c7c7c7;
@@ -3479,7 +3479,7 @@ input:checked + .toggleSwitchSlider:before {
     background-color: transparent;
 }
 #launch_progress[value]::-webkit-progress-value {
-    background-color: #fff;
+    background-color: #d4a537;
 }
 
 /* Span which displays information about the status of the launch process. */
@@ -3792,7 +3792,7 @@ input:checked + .toggleSwitchSlider:before {
     line-height: 12px;
     height: 12px;
     border-radius: 2px;
-    background: rgba(31, 140, 11, 0.8);
+    background: rgba(212, 165, 55, 0.8);
     padding: 0px 2px;
 }
 
